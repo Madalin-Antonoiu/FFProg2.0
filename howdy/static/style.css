@@ -284,8 +284,8 @@ nav li:nth-child(2n+1) a:after {
   position: relative;
   margin-top: 30px;
   color: white;
-  background: steelblue;
-  box-shadow: 0 8px #3b6d97;
+  background: #000000;
+  box-shadow: 0 8px white;
 }
 
 .contact .btn-blue:hover {
@@ -412,6 +412,96 @@ nav li:nth-child(2n+1) a:after {
 }
 
 
+/* Contact thing*/
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-paperplane {
+  font-size: 1em;
+  color: white;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+
+.contact-button {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+  background: transparent;
+}
+.contact-button span {
+  text-transform: none;
+  position: absolute;
+  color: #EE283E;
+  top: 15px;
+  left: 25px;
+  opacity: 0;
+  font-size: 20px;
+  transition: all 0s ease 0s;
+}
+.contact-button:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background: white;
+  color: white;
+}
+.contact-button:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.contact-button:hover:before {     /* btn mic*/
+  transition: 0.3s ease-in-out;
+  background-color: #EE283E;
+}
+.contact-button:before, .contact-button:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 132px;
+  height: 25px;
+}
+.contact-button:before {      /* brn mic*/
+  border: 2px solid #EE283E;
+  background-color: #1F3944;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.contact-button:after {
+  content: "Available for work";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
 /* If you want top buttons to have same effect as Head over to the blog 
 
 .top_btn{
@@ -433,7 +523,7 @@ color:#000000;
   right: 3px;
   height:3px;         
   width: 0px;
-  background: #1AAB8A;
+  background:                                                        #1AAB8A;
   transition:800ms ease all;
 }
 
