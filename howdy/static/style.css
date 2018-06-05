@@ -70,7 +70,7 @@
   }
   /* Contact Icons Hover no line*/
   .fa:hover{
-  	color: #D5D5D5;
+  	color: red;
   	text-decoration: none;
   }
 
