@@ -1,181 +1,197 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fast-Forward Programming</title>
-  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
-<link rel='stylesheet prefetch' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/skeleton.2.02.css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/style.css">
 
-<link rel="stylesheet" href="static/style.css">
-
-
-
-  
 </head>
 
 <body>
+	<!-- The navigation bar-->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"> </span>
+					<span class="icon-bar"> </span>
+					<span class="icon-bar"> </span>
+				</button>
+				<a class="navbar-brand" href="#"> <img src="/static/logo_1.png"> </a>
+			</div>
 
-  <!--HEADER-->
-<header>
-  <div class="container">
-    
-    <div class="row">
-      <div class="twelve columns"> 
-        <nav>
-          <ul>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">Home</a></li>
+					<li> <a href="#">About</a></li>
+					<li> <a href="#">Works</a></li>
+					<li> <a href="#">Contact</a></li>
+				</ul>
+		</div>
+	</nav> 
 
-              <a href="#" class="top_btn">About</a>
-              <a href="#" class="top_btn">Work <i class="fa fa-spinner fa-spin"> </i></a>
-              <a href="#" class="top_btn">Sources <i class="fa fa-spinner fa-spin"> </i></a>
-              <li><a href="javascript: document.body.scrollIntoView(false);" class="top_btn">Contact</a></li>
+	<!-- Bootstrap Carousel Image Slider -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators" >
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1" ></li>
+			<li data-target="#myCarousel" data-slide-to="2" > </li>
+		</ol>
+		<!--Slider Images Container-->
+		<div class="carousel-inner" role="listbox"> 
+			<!-- Active Image Slider -->
+			<div class="item active">
+				<img src="static/inspire.jpeg">
+					<div class="carousel-caption">
+						<h1>Web development guide from zero to hero!</h1>
+						<br>
+						<a href="/guide/"><button type="button" class="btn btn-default" id="guidaro1">Get Started</button></a>
 
-          </ul>
-        </nav>  
-      </div> 
-    </div>
+					</div>
+			</div>		
+			<!-- Second Image Slider -->
+			<div class="item ">
+				<img src="static/screens.jpg">
+					<div class="carousel-caption">
+						<h1>Looks good no matter the screen size.</h1>
+					</div>
+			</div>	
+			<!-- Third Image Slider -->
+			<div class="item ">
+				<img src="static/blocks_1.jpeg">
+					<div class="carousel-caption">
+						<h1>Painless to modify & add features.</h1>
+					</div>
+			</div>	
+		</div>
 
-    <div class="row">    
-      <div class="twelve columns">
-        
-          <h1> <font class="see_all" style="position: relative; left: -400px; color=white">Fast <i class="fa fa-fast-forward" style="font-size:50px;color:red;"></i> </font> <font color="red" class="see_all" style="position: relative; left: -400px; bottom: 0px">Forward</font><small><font style="position: relative; left: -5px "> <font class="see_all" style="position: relative; left: -724px; top: 38px; font-size: 42.5px"> Programming</font></small></h1><br>
-          <h4> <font class="see_all" style="position: relative; left: 600px; color: white; top: -70px; font-size: 28px;"> Rapid <font style="color: red"> web development </font> using Python,</font> <br> <h4>
-          <h4> <font class="see_all" style="position: relative; left: 600px; top: -102px; color: white; font-size: 28px;"> Django, HTML, CSS, SQL and more.</font></h4>
-          <!--<font style="position: relative; top: -200px;"> <a href="#" class="btn">Head over to the blog</font></a> 
-               -->
+		<!-- Slider Control Arrows -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
 
-      </div>
-    </div>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div> 
 
-    <section class="services">
-      <div class="row">
-        <div class="twelve columns">
-          <h3 style="font-size: 25px;">Choose an area of expertise</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="one-half column">
-          <a href="/guide/">
-            <h4>Web Design</h4>
-            <span class="fa fa-diamond"></span>
-            <p>A beginner, passionate self-taught web designer, started this project from an old saying:<i> "Give the man a fish and you fed him once. Teach the man to fish and you fed him for life."</i></p>
-          </a>
-        </div>
-        <div class="one-half column">
-          <a href="#">
-            <h4>Work in Progress <i class="fa fa-spinner fa-spin"> </i></h4>
-            <span class="fa fa-cubes"></span>
-            <p>Lorem ipsum dolor sit amet, eros aliquando conclusionemque quo te, te noster constituam adversarium eum. Ex similique consetetur eos. Cu qui homero propriae..</p>
-          </a>
-        </div>
-      </div><!--end of .row-->
-    </section>
-  </div><!--end of .container-->
-</header>
+	<!-- The 6 columns for the images-->
+	<div class="container text-center""> <!-- Declar container cu textul centrat-->
+		<h2>What We`re Using</h2>
+		<div class="row">
+				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6"> <!-- Acopera 3 patratele fiecare din 12-->
+					<img src="static/ubuntu.png" id="icon">
+					<h4>Ubuntu Linux</h4>
 
-<!--ABOUT-->
-<section class="about">
-  <div class="container">
-    <div class="row">
-      <div class="twelve columns">
-        <h3>Who am I</h3>
-      </div>
-    </div><!--end of .row-->
-    <div class="row bottom">
-      <div class="two-thirds column">
-        <p>Work in Progress <i class="fa fa-spinner fa-spin" style="font-size:23px"></i> <br> Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
-        sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
-        <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
-        Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-      </div>
-      <div class="one-third column">
-        <h4>Degrees</h4>
-        <ul>
-          <li>Undergraduate in Mathematics - Informatics</li>
-          <li>BA in Language Studies</li>
-          <li>MA in English Translation Studies </li>
-        </ul>
-        <h4>Work in Progress <i class="fa fa-spinner fa-spin" style="font-size:24px"></i></h4>
-          <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-          </ul>
-          <a href="#" class="btn"><i class="fa fa-spinner fa-spin" style="font-size:24px"></i></a>
-      </div>
-    </div><!--end of .row-->
-    <div class="row">
-      <div class="twelve columns">
-        <h4 class="center">Interested in learning more about programming?</h4>
-      </div>
-    </div><!--end of .row-->
-    <div class="row">
-      <div class="twelve columns">
-        <a href="#" class="btn block"><i class="fa fa-spinner fa-spin" style="font-size:24px"></i></a>
-      </div>
-    </div><!--end of .row-->
-  </div><!--end of .container-->
-</section>
+				</div>
 
-<!--CONTACT-->
-<section class="contact">
-  <div class="container">
-    <div class="row">
-      <div class="twelve columns">
-        <h3>Contact <i class="fa fa-spinner fa-spin" style="font-size:24px"></i></h3>
-      </div>
-    </div><!--end of .row-->
-    <div class="row">
-      <div class="offset-by-two eight columns">
-        <ul>
-          <li><a href="#" title=""><span class="fa fa-facebook"> <i class="fa fa-spinner fa-spin" style="font-size:24px"></i></span></a></li>
-          <li><a href="#" title=""><span class="fa fa-twitter"> <i class="fa fa-spinner fa-spin" style="font-size:24px"></i></span></a></li>
-          <li><a href="#" title=""><span class="fa fa-github"> <i class="fa fa-spinner fa-spin" style="font-size:24px"></i></span></a></li>
-        </ul>
-      </div>
-    </div><!--end of .row-->
+				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6"> 
+					<img src="static/python.png" id="icon">
+					<h4>Python</h4>
+				</div>
 
-    <!-- Contact me btn -->
-    <div class="row">
-      <div class="twelve columns">
+				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6"> 
+					<img src="static/django.png" id="icon">
+					<h4>Django</h4>
 
-          <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <defs>
-            <symbol id="icon-paperplane" viewBox="0 0 1024 1024">
-                <title>paperplane</title>
-                <path class="path1" d="M1009.376 5.12c-5.312-3.424-11.36-5.12-17.376-5.12-6.176 0-12.384 1.76-17.76 5.376l-960 640c-9.888 6.56-15.328 18.112-14.048 29.952 1.216 11.808 8.896 22.016 19.936 26.368l250.368 100.192 117.728 206.016c5.632 9.888 16.096 16 27.424 16.128 0.128 0 0.224 0 0.352 0 11.232 0 21.664-5.952 27.424-15.552l66.464-110.816 310.24 124.064c3.808 1.536 7.808 2.272 11.872 2.272 5.44 0 10.816-1.376 15.68-4.128 8.448-4.736 14.24-13.056 15.872-22.624l160-960c2.080-12.576-3.488-25.184-14.176-32.128zM100.352 664.864l741.6-494.432-539.2 577.184c-2.848-1.696-5.376-3.936-8.512-5.184l-193.888-77.568zM326.048 770.112c-0.064-0.128-0.16-0.192-0.224-0.32l606.176-648.8-516.768 805.184-89.184-156.064zM806.944 947.488l-273.312-109.312c-6.496-2.56-13.248-3.424-19.936-3.808l420.864-652.416-127.616 765.536z"></path>
-            </symbol>
-          </defs>
-        </svg>
+				</div>
 
-                      <a href="http://www.ajerez.es/en/" target="_blank" class="contact-button">
-                          Contact 
-                        <svg class="icon icon-paperplane"><use xlink:href="#icon-paperplane"></use></svg>
-                        <span>ff.programming@<br>gmail.com</span>
-                      </a>
-      </div>
-    </div><!--end of .row-->
+				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6"> 
+					<img src="static/html5.png" id="icon">
+					<h4>HTML5</h4>
+				</div>
 
-    <div class="row">
-      <div class="twelve columns">
-        <p class="creator">©2018 Fast-Forward Programming    <a href="#"><font style="color: white;">  Go top</a></p>
-      </div> 
-    </div><!--end of .row-->
-  </div><!--end of .container-->
-</section>
-  
-  
+				<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6"> 
+					<img src="static/css3.png" id="icon">
+					<h4>CSS3</h4>
+				</div>	
 
-    <script  src="js/index.js"></script>
+				<div class="col-md-2"> 
+					<img src="static/bootstrap.png" id="icon">
+					<h4>Bootstrap</h4>
+				</div>
+			</div>		
+		</div>
+	</div>
 
+	<!-- Container for two-column below icons-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h4>A guide that has you fully covered.</h4>
+				<p>There are many ways of coding. I focus on a clean, easily readable block-based coding so you can painlessly add or remove features at a fast pace! My guide covers both Front and Back-End Development, aka what's in front of your eyes when you look at a website and what`s running behind the scenes.</p>
+				<p>Following this guide you will learn how to code and run your own websites from nothing to the final product. No matter if you are a complete beginner or an experienced programmer, this guide has something for you! It`s been designed to be easily soaked in and get fast to the beautiful end product, while learning in the process! Get the basics and form the core, start adding the features you desire and i promise you it will run and look perfect on any device!</p>
+			</div>
+			<div class="col-md-6">
+				<img src="static/poza1.jpeg" class="img-responsive" id="img_1">
+			</div>
+		</div>
+	</div>
 
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> <!--First 2 col - row -->
+				<h4>Build the core foundation...</h4>
+				<p>Python and its Django library are well known for being actively used by giants like Google, Reddit, YouTube, Facebook, Instagram and others! Simplicity, speed and versatility are at home with Python!</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="static/busin.jpeg" class="img-responsive" id="trinity">
+			</div>
 
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> <!--Last 2 col - row -->
+				<h4>...design the look and hit publish!</h4>
+				<p>HTML&CSS is the bread and butter for website design, while Bootstrap helps tremendously with responsive design and saves alot of time altoghether!</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="static/publish_1.jpeg" class="img-responsive" id="trinity">
+			</div>
+		</div>
+	</div>
 
+	<!--Hidden expand container -->
+	<div class="container">
+		<div class="row">
+			<!-- No col div, just base display -->
+			<h4><a href="#hidden" data-toggle="collapse">But there`s more...</a></h4>
+			<div id="hidden" class="collapse">
+				<p>Throughtout this guide you will also get a solid practice of using Linux's Terminal, Github, PythonAnywhere (for hosting our websites online for free) and couple other techniques.</p>
+				<p>By this point you probably say to yourself: "I can find all this on Google anyways". And the answer to that is "Yes, your are right". What this guide does is it saves you alot of time otherwise spent searching, figuring out how to incorporate new features or debugging errors, so that you can spend more time coding and less time treating headaches!</p>
+			</div>
+		</div>
+	</div>
+
+	<!--Footer Section-->
+	<footer class="container-fluid text-center">
+		<div class="row">
+			<div class="col-sm-4"> 
+				<h3>Contact Me</h3>
+				<br>
+				<h4>My adress and contact info here.</h4>
+			</div>
+			<!--Social Media Icons-->
+			<div class="col-sm-4"> 
+				<h3>Connect</h3>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-google"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+				<a href="#" class="fa fa-youtube"></a>
+			</div>
+			<!--Bunny Icon-->
+			<div class="col-sm-4"> 
+				<img src="static/logo_1.png" class="icon" id="jos">
+			</div>
+
+		</div>
+	</footer>
 </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>
