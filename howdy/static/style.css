@@ -1,4 +1,5 @@
-	/* Navbar CSS */
+
+  /* Navbar CSS */
   .navbar {
   	margin-bottom: 0;
   	border-radius: 0;
@@ -132,9 +133,16 @@ ol.carousel-indicators li.active {
   		.carousel .item {
 		height: 150px;
 		}
-  	}
+
+      /*#guidaro1{
+      display: none; */
+    }
 
   	@media (max-width: 400px) {
   		#icon {
-  		max-width: 100px;
+  		max-width: 150px;
   		}
+      *#guidaro1{
+      display: none;
+    }
+  }
