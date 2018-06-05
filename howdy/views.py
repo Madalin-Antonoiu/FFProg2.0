@@ -11,3 +11,6 @@ class HomePageView(TemplateView):
 # Second page view
 class GuidePageView(TemplateView):
     template_name = "guide.html"
+
+class OldIndexView(TemplateView):
+    template_name = "index_old.html"
